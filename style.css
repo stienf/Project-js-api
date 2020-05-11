@@ -1,0 +1,366 @@
+html {
+	scroll-behavior: smooth;
+	}
+.jumbotron {
+	background: url(cocktail-header.jpg) no-repeat center center fixed;
+  
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 100vh;
+	padding-bottom: 0 !important;
+  }
+  
+  h1 {
+	color: #e76b12;
+  }
+  
+  .title2 {
+	color: whitesmoke;
+	font-family: 'Abel', sans-serif;
+	text-align: left;	
+	font-size: 30px;
+  }
+  
+  #logo {
+	max-width: 450px;
+ max-height: 450px;
+ margin-bottom: 35px;
+
+  }
+ 
+  input {
+	outline: none;
+  }
+  input[type="search"] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-size: 100%;
+	box-sizing: content-box;
+  }
+ 
+  #search{
+	  max-width: 150px;
+	  border: solid 2px #2e343a;
+	  margin-top: 50px;
+	 
+		min-width: 150px;
+	  -webkit-border-radius: 10em;
+	  -moz-border-radius: 10em;
+	  border-radius: 10em;
+	  background:  #e7a101;
+	  -webkit-transition: all 0.5s;
+	  -moz-transition: all 0.5s;
+	  transition: all 0.5s;
+	  margin-bottom: 35px;
+		color: #2e343a;
+	font-family: 'Rochester', bold;
+	font-size: 37px;
+	padding: 1px;
+	 }
+  
+  #search:hover {
+	  /* Start the shake animation and make the animation last for 0.5 seconds */
+	  animation: shake 0.5s;
+	
+	  /* When the animation is finished, start again */
+	  animation-iteration-count: infinite;
+	}
+
+	#searchAgain{
+		max-width: 150px;
+		border: solid 2px #2e343a;
+		margin-top: 50px;
+	   min-width: 200px;
+		-webkit-border-radius: 10em;
+		-moz-border-radius: 10em;
+		border-radius: 10em;
+		background:  #e7a101;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+		margin-bottom: 35px;
+		  color: #2e343a;
+	  font-family: 'Rochester', bold;
+	  font-size: 30px;
+	  padding: 1px;
+	}
+
+	#searchAgain:hover {
+		/* Start the shake animation and make the animation last for 0.5 seconds */
+		animation: shake 0.5s;
+	  
+		/* When the animation is finished, start again */
+		animation-iteration-count: infinite;
+	  }
+
+	
+
+	.rowSearchBtn {
+		justify-content: flex-start;
+	}
+	
+	@keyframes shake {
+	  0% { transform: translate(1px, 1px) rotate(0deg); }
+	  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	  20% { transform: translate(-3px, 0px) rotate(1deg); }
+	  30% { transform: translate(3px, 2px) rotate(0deg); }
+	  40% { transform: translate(1px, -1px) rotate(1deg); }
+	  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	  60% { transform: translate(-3px, 1px) rotate(0deg); }
+	  70% { transform: translate(3px, 1px) rotate(-1deg); }
+	  80% { transform: translate(-1px, -1px) rotate(1deg); }
+	  90% { transform: translate(1px, 2px) rotate(0deg); }
+	  100% { transform: translate(1px, -2px) rotate(-1deg); }
+	}
+
+
+
+  #sel1 {
+	max-width: 150px;
+	border: solid 2px #e7a101;
+	border-right: solid 1px #e7a101;
+	padding: 9px 10px 9px 9px;
+	height: 50px;
+  
+	width: 30%;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em 2em 2em 10em;
+	background: #2e343a;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	color: white;
+	text-indent: 5px;
+	margin-left: 13px;
+  }
+  #sel1:focus {
+	background: #22272d;
+  }
+  #rowSearch {
+	flex-direction: row;
+	justify-content: start !important;
+  }
+  #sel1 option {
+	  text-indent: 5px;
+  }
+  
+  input[type="search"] {
+	background: #2e343a
+	  url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat
+	  9px center;
+	border: solid 2px #e7a101;
+	padding: 9px 10px 9px 32px;
+	color: white;
+	width: 30%;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 2em 10em 10em 2em;
+	border-left: solid 1px #e7a101;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	
+  }
+  input[type="search"]:focus {
+	background-color: #22272d;
+  
+	-webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+	-moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+	box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+  }
+  
+  input:-moz-placeholder {
+	color: #999;
+  }
+  input::-webkit-input-placeholder {
+	color: #999;
+  }
+  
+ 
+  .topContainer {
+	  margin: 0 auto !important;
+  }
+ 
+  
+  
+
+  #recipeContainer {
+	width: 75%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 50px;
+
+background-size: cover;
+background-repeat: no-repeat;
+	
+
+  }
+
+  .polaroid {
+	
+	background-color: white;
+	box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+  }
+  
+
+
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(231, 162, 1, 0.527);
+  }
+
+  .text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .mainCard:hover .overlay {
+	opacity: 1;
+	cursor: pointer;
+  }
+
+  .mainCard {
+	  position: relative;
+	  
+	  -webkit-box-shadow: 5px 6px 13px 2px #B2B2B2; 
+	  box-shadow: 5px 6px 13px 2px #B2B2B2;
+	  margin: 5%;
+
+  }
+
+  .mainSection {
+	  display: none;
+  }
+.drinkBtn {
+	background: #2e343a !important;
+	color: #e7a101 !important;
+	border: none !important;
+	border-radius: 0px 0px 5px 5px!important;
+	font-family: 'Abel', sans-serif !important;
+	font-size: 25px !important;
+}
+.ingredients {
+	text-align: center;
+	border-bottom: solid 2px #e7a101;
+	position: relative;
+	margin: 0 auto;
+	max-width: 240px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-size: 17px;
+
+}
+.ingredients span{
+	
+	font-weight: bold;
+	margin-left: 5%;
+}
+
+.instructions {
+	font-size: 17px;
+
+}
+
+.title3 {
+	font-family: 'Rochester', bold;
+	font-size: 60px;
+	border-bottom: solid 2px #e7a101;
+	padding-bottom: 15px;
+	padding-top: 1px;
+	text-align: center;
+	margin: 0 auto;
+	width: 85%;
+}
+
+.title4 {
+	font-family: 'Abel', sans-serif;
+	font-size: 35px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.card-body {
+	padding: 0 !important;
+}
+footer {
+	padding: 15px;
+	background-color: #22272d;
+	color: #e7a101;
+	text-align: center;
+	font-family: 'Abel', sans-serif;
+}
+@media only screen and (max-width: 770px) {
+  .mainCard {
+	 
+	  margin: 0 auto;
+  }
+
+  #sel1{
+	min-width: 40% !important;
+  }
+  input[type="search"]{
+	  width: 40%;
+  }
+  .rowSearchBtn {
+	justify-content: center;
+}
+
+#recipeContainer {
+	
+	padding: 50px;
+	width: 93%;
+	background-position: right;
+
+
+  }
+
+  .sideCard{
+	  width: 85%;
+  }
+
+  .bottomCard{
+	  width: 80%;
+  }
+
+
+}
+
+.container-results{
+
+padding: 2% 8%;
+
+}
+
+.bottomCard{
+	background-color: rgba(255, 255, 255, 0.75);
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.sideCard{
+	background-color: rgba(255, 255, 255, 0.4);
+	padding-top: 1%;
+}
+
